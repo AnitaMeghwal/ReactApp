@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.abox:hover{
+  position:relative;
+  animation-name:ascale;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ascale {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.box {
+  position: relative;
+  animation-name:rot;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes rot {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes myanimation {
+  0% {background-color: blue; }
+  25% {background-color: red;}
+  50% {background-color: green; }
+  75% {background-color: white; }
+  100% {background-color: blue; }
+}
+ 
